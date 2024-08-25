@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Leonardo Alves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <nav class="menu"> <!--menu de navegação principal-->
+            <ul class="ul_menu">
+                <li class="li_menu"><a href="index.html">Sobre mim</a></li>
+                <li class="li_menu"><a href="formacao.html">Formação </a></li>
+                <li class="li_menu"><a href="portfolio.html">Portfólio</a></li>
+                <li class="li_menu"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container wrapper">
+        <aside class="imagem_leo"> <!--barra lateral com foto e informações adicionais-->
+            <img src="leo.jpg">
+            <div class="infos">
+                <p><strong>Nome</strong> Leonardo Alves</p>
+                <p><strong>Ocupação</strong> Escrevente Notificador</p>
+                <p><strong>Data de Nascimento</strong> 20/11/1994</p>
+            </div> 
+        </aside>
+
+        <section class="principal"> <!--seção principal de informações contendo formulario-->
+            <form class="textoPrincipal" method="get">
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr> 
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="msg">Deixe sua mensagem:</label></th>
+                        <td><textarea name="msg" rows="5" cols="40"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <button>Enviar</button></td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>

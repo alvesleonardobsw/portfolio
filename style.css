@@ -1,0 +1,108 @@
+@font-face { /* fonte retirada da internet */
+    font-family: minhaFonte;
+    src: url(Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #191919;
+}
+
+.container {
+    display: grid;
+    color: #B4B4B4;
+}
+
+header {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    background-color: #2A2A2A;
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    gap: 20px;
+    font-family: minhaFonte;
+    font-size: 20px;
+}
+
+.imagem_leo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.infos {
+    margin-left: 20px;
+    font-family:minhaFonte;
+    font-size: 20px;
+}
+
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.ul_menu {
+    list-style-type: none;
+}
+
+.li_menu {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid black 1px;
+    border-radius: 10px;
+    color: #B4B4B4;
+}
+
+a:hover {
+    background-color: #EEEEEE;
+    color: #111111;
+}
+
+.textoPrincipal {
+    font-size: 25px;
+    font-family: minhaFonte;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input {
+    margin-bottom: 20px;
+}
+
+/* Media query para responsividade */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .imagem_leo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
